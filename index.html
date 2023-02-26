@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>My BookList Application</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class=" display-2 text-center"><i class="text-primary fa-solid fa-book-open mx-2"></i>
+            My<span class="text-primary">Book</span>List
+        </h1>
+        <form id="myform" class="my-4">
+            <div class="form-group my-3">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Enter Title...">
+            </div>
+            <div class="form-group my-3">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id="author" placeholder="Enter Name...">
+            </div>
+            <div class="form-group my-3">
+                <label for="isbn-number">ISBN#</label>
+                <input type="text" class="form-control" id="number" placeholder="Enter Number...">
+            </div>
+            <button class="btn btn-primary form-control mt-3" type="submit">Submit</button>
+        </form>
+        <table id="table" class="table table-striped d-none">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
+        <footer id="footer" class="container">
+            <div class="text-center text-secondary py-2">© Rohan Chaudhary 2022
+            </div>
+        </footer>
+    </div>
+    <div id="loader" class="hide-page">
+        <div class="loader">
+            <div class="circle circle-top"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="spinner">
+        Loading
+        <div class="spinner-sector spinner-sector-red"></div>
+        <div class="spinner-sector spinner-sector-blue"></div>
+        <div class="spinner-sector spinner-sector-green"></div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="spinner-2">Loading</div>
+</body>
+
+</html> -->
